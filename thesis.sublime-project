@@ -1,0 +1,66 @@
+{
+  "folders":
+  [
+  {
+    "path": ".",
+    "file_exclude_patterns": [
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.dvi",
+    "*.fdb_latexmk",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.idx",
+    "*.ilg",
+    "*.ind",
+    "*.ist",
+    "*.lof",
+    "*.log",
+    "*.lot",
+    "*.maf",
+    "*.mtc",
+    "*.mtc0",
+    "*.nav",
+    "*.nlo",
+    "*.out",
+    "*.pdfsync",
+    "*.ps",
+    "*.snm",
+    "*.synctex.gz",
+    "*.toc",
+    "*.vrb",
+    "*.xdy",
+    "*.tdo",
+    "*.tui",
+    "*.tuo",
+    "*-blx.bib",
+    "*.lol",
+    "*.mp",
+    "*.pdf",
+    "*.pyg",
+    "*.tmp",
+    "*.top",
+    "*.run.xml",
+    "*.sublime-workspace",
+    "*.doc"
+    ]
+  }
+  ],
+  "settings":
+  {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+  },
+  "build_systems":
+  [
+    {
+        "name": "PDF",
+        "cmd": ["zsh", "--login", "-c", "make && open thesis.pdf"]
+    }
+  ]
+}
