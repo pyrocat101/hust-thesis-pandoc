@@ -1,3 +1,4 @@
+% 去掉`titlepage`后不生成封面
 \documentclass[titlepage,openany]{HUSTugt}
 
 \usepackage{graphicx}
@@ -5,33 +6,19 @@
 \usepackage{listings}
 \usepackage{multirow}
 \usepackage{longtable}
-% \usepackage{algorithm}
-% \usepackage{algpseudocode}
-% \usepackage{float}
+\usepackage{float}
 
 \begin{document}
 
-\title{你的题目}
-\author{作者}
+% 课题和作者
+\title{你的大作}
+\author{你的名字}
+\college{你的学院}
+\department{你的专业}
+\stunumber{你的学号}
+\teacher{你的指导教师}
 
-\college{计算机科学与技术学院}
-\department{计算机科学与技术}
-\stunumber{U200915229}
-\teacher{刘方明}
-
-\cabstract{
-
-这是一个中文概要
-
-}
-\ckeywords{移动云计算，移动网络，用户行为，节能}
-
-\eabstract{
-
-This is an \emph{English} abstract.
-
-}
-\ekeywords{Mobile Cloud Computing, Mobile Network, User Behavior, Energy Saving}
+\input{abstract}
 
 \makecover
 
@@ -39,7 +26,7 @@ $body$
 
 \addcontentsline{toc}{chapter}{致\hspace{1.5em}谢}
 \chapter*{致\hspace{2em}谢}
-\input{thanks.tex}
+\input{thanks}
 
 \backmatter
 \nocite{*}

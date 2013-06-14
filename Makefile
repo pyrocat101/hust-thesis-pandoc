@@ -1,27 +1,24 @@
-CLASS=HUSTugt.cls
-TMP=*-blx.bib *.{mp,aux,bbl,blg,log,out,xml,tmp,tui,tuo,synctex.gz,t,toc,xdv}
+CLS=HUSTugt.cls
 BIB=ref.bib
 BST=hust.bst
 TPL=template.tex
 THX=thanks.tex
-# ABS=abstract.tex
+ABS=abstract.tex
+FIG=figures
 
 pdf: thesis.pdf
 
-thesis.tex: thesis.md $(TPL) $(THX)
-	@pandoc -s --template=${TPL} --chapters -N -o $@ $<
+thesis.pdf: thesis.tex $(BIB) $(BST) $(CLS) $(THX) $(ABS) $(FIG)
+	@latexmk -xelatex -use-make $<
 
-thesis.pdf: thesis.tex $(CLASS) $(BIB) $(BST)
-	@xelatex -no-pdf $<
-	@bibtex $(addsuffix .aux, $(basename $<))
-	@xelatex -no-pdf $<
-	@xelatex $<
-	@rm -f ${TMP}
+thesis.tex: thesis.md $(TPL)
+	@pandoc -s --template=${TPL} --chapters -o $@ $<
 
 %.tex: %.md
-	@pandoc -o $@ $<
+	@pandoc --chapters -o $@ $<
 
 clean:
-	@rm -f ${TMP} thesis.pdf thesis.tex $(ABS) $(THX)
+	@latexmk -CA
+	@rm -f thesis.tex $(THX)
 
 .PHONY: pdf clean
