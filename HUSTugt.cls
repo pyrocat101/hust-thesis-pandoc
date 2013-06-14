@@ -77,7 +77,7 @@
 
 \setCJKmainfont[ItalicFont={KaiTi}]{SimSun}
 \setCJKsansfont{SimHei}
-\setCJKmonofont*{STFangsong}
+\setCJKmonofont*{FangSong}
 \usepackage{newtxmath}
 % \xeCJKsetcharclass{"0}{"2E7F}{0}
 % \xeCJKsetcharclass{"2E80}{"FFFF}{1}
