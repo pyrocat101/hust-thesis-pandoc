@@ -11,6 +11,13 @@
 
 阅读`template.tex`、`abstract.tex`、`thesis.md`和`thanks.md`，看看`thesis.pdf`是由怎样的源码生成的。
 
+## Acknowledgement
+
+感谢[@aifreedom][aifreedom]学长编写的华中科技大学本科毕业论文[文档类][cls]。
+
+[aifreedom]: http://xiesong.me/
+[cls]: https://github.com/aifreedom/HUST-Undergraduate-Thesis
+
 ## License
 
 MIT
