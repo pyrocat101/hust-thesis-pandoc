@@ -1,7 +1,7 @@
 # HUST Thesis Pandoc
 
-使用Pandoc Markdown和LaTeX写华中科技大学本科生毕业论文。
-![](https://github.com/Sicun/hust-thesis-pandoc/tree/master/example/thesis-0.png)
+使用Pandoc Markdown和LaTeX写华中科技大学本科生毕业论文。  
+![](https://raw.githubusercontent.com/Sicun/hust-thesis-pandoc/master/example/thesis-0.png)
 
 ## Usage
 
@@ -22,16 +22,16 @@
 ##FAQ
 
  1. 如果正确安装了需要的字体还是出现类似错误：
->!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- !
- ! fontspec error: "font-not-found"
- !
- ! The font "[SIMKAI.TTF]" cannot be found.
- !
- ! See the fontspec documentation for further information.
- !
- ! For immediate help type H <return>.
- !...............................................
+>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+ !  
+ ! fontspec error: "font-not-found"  
+ !  
+ ! The font "[SIMKAI.TTF]" cannot be found.  
+ !  
+ ! See the fontspec documentation for further information.  
+ !  
+ ! For immediate help type H <return>.  
+ !...............................................  
 
  那么请打开`/usr/local/texlive/2013/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def`或`/usr/share/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def`将`[SIMKAI.TTF]`，`[SIMFANG.TTF]`分别改成`KaiTi`，`FangSong` 。
 
@@ -60,3 +60,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
+
