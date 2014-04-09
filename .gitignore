@@ -40,4 +40,5 @@
 *.run.xml
 *.pyc
 *.fls
+.DS_Store
 thesis/*.log

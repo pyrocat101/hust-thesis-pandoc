@@ -1,6 +1,7 @@
 # HUST Thesis Pandoc
 
 使用Pandoc Markdown和LaTeX写华中科技大学本科生毕业论文。
+![](https://github.com/Sicun/hust-thesis-pandoc/tree/master/example/thesis-0.png)
 
 ## Usage
 
