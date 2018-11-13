@@ -19,7 +19,7 @@
 [aifreedom]: http://xiesong.me/
 [cls]: https://github.com/aifreedom/HUST-Undergraduate-Thesis
 
-##FAQ
+## FAQ
 
  1. 如果正确安装了需要的字体还是出现类似错误：
 >!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
